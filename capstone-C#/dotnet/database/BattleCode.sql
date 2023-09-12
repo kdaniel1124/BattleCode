@@ -2,16 +2,16 @@ USE master
 GO
 
 --drop database if it exists
-IF DB_ID('final_capstone') IS NOT NULL
+IF DB_ID('battle_code') IS NOT NULL
 BEGIN
-	ALTER DATABASE final_capstone SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-	DROP DATABASE final_capstone;
+	ALTER DATABASE battle_code SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+	DROP DATABASE battle_code;
 END
 
-CREATE DATABASE final_capstone
+CREATE DATABASE battle_code
 GO
 
-USE final_capstone
+USE battle_code
 GO
 
 --create tables
